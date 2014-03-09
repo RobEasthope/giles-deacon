@@ -1,0 +1,129 @@
+$nav-breakpoint: "#{$screen} and (min-width: 50em)";
+
+// Logo
+.giles-logo {
+	height: $giles-logo-height-small;
+	width: auto;
+
+	@media #{$medium-up} {
+		height: $giles-logo-height-large;
+	}
+}
+
+// Active nav class
+.nav-active {
+	border-left: 1px solid $new-black;
+
+	@media #{$nav-breakpoint} {
+		border-left: none;
+		border-bottom: 1px solid $new-black;
+	}
+}
+
+.nav-active-mobile {
+	
+}
+
+// Mobile navigation
+.mobile-nav {
+	height: 100%;
+
+	.close-mobile-nav {
+		margin-left: rem-calc(20);
+		padding-left: rem-calc(10, 15);
+		line-height: rem-calc(60);
+
+		i {
+			padding-right: rem-calc(10);
+		}
+	}
+
+	ul {
+		margin-bottom: 0;
+		margin-left: rem-calc(20);
+		height: 100%;
+
+		li {
+			a {
+				font-size: rem-calc(14);
+				text-transform: uppercase;
+				letter-spacing: 0.2em;
+				padding-left: 0.3em;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+a.menu-icon {
+	display: block;
+	text-indent: 10px !important;
+	line-height: 1 !important;
+	position: absolute;
+	top: $giles-logo-height-small;
+	left: 10px;
+
+	img {
+		height: $giles-logo-height-small;
+		width: auto;
+	}
+}
+
+// Desktop navigation
+.desktop-nav {
+	text-align: center !important;
+	margin-top: $giles-logo-height-small;
+	margin-bottom: $giles-logo-height-small;
+
+	ul {
+		display: none;
+		list-style: none;
+		margin-bottom: 0;
+		margin-left: 0;
+		line-height: 1;
+
+		@media #{$nav-breakpoint} {
+			margin-top: $top-bar-vertical-margins;
+			display: block;
+		}
+
+		li {
+			display: inline;
+			margin: 0 rem-calc(15);
+
+			a {
+				text-transform: uppercase;
+				font-size: rem-calc(14);
+				font-weight: 300;
+				letter-spacing: 0.2em;
+				padding-left: 0.3em;
+				text-decoration: none;
+			}
+		}
+	}
+
+	@media #{$nav-breakpoint}{
+		display: inline-block;
+		margin-top: $top-bar-vertical-margins;
+		margin-bottom: $top-bar-vertical-margins;
+	}
+}
+
+// Offcanvas
+.off-canvas-list {
+	li {
+		list-style: none;
+	}
+}
+
+.left-small {
+	@media #{$nav-breakpoint} {
+		display: none;
+	}
+}
+
+.tab-bar {
+	@media #{$nav-breakpoint} {
+		text-align: center !important;
+	}
+}

@@ -1,0 +1,127 @@
+html, body {
+	height: 100%;
+}
+
+.holding-page {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+.holding-page-box {
+	display: table-cell;
+	vertical-align: middle;
+	width: 300px;
+
+	// Bkg
+	background-color: #f7f4ef;
+	background-size: cover;
+	background-position: center center;
+	// background-image: url('../img/holding-page/giles-sketch-full.jpg');
+
+	@media (orientation: portrait) {
+		background-image: url('../img/holding-page/giles-sketch-portrait.jpg');
+	}
+
+	@media (orientation: landscape) {
+		background-image: url('../img/holding-page/giles-sketch-full.jpg');
+	}
+}
+
+.holding-page-content {
+	width: 300px;
+	margin: 0 auto;
+	background-color: #222;
+	padding-top: 1.25em;
+	padding-bottom: 1.25em;
+	border: 1px solid white;
+}
+
+// Branding
+.branding {text-align: center;}
+
+.giles-brand {
+	line-height: 1;
+	text-transform: uppercase;
+	margin: 15px 0;
+	width: auto;
+	height: 48px;
+}
+
+.giles-holding-description {}
+
+// Form
+.holding-signup {
+	margin-bottom: 0.5em;
+}
+
+.submit-holding-form {
+	@include button($button-sml, $giles-primary, 0, true, disabled, true);
+	text-transform: uppercase;
+	opacity: 1;
+	transition: all 0.4s ease-in-out;
+	&:hover, &:focus {
+		background-color: rgb(223, 111, 63);
+		color: white;
+	}
+}
+
+// Parsley error classes
+.parsley-validated {}
+.parsley-success {}
+
+.parsley-error {background-color: $error-pink;}
+
+ul.parsley-error-list {
+	color: $error-pink;
+	list-style-type: none;
+}
+
+li.parsley-error {
+	padding: 0 5px;
+	&::-input-placeholder {
+		color: white;
+	}
+}
+
+// Social links
+.social-links {
+	text-align: center;
+
+	&:before {
+		display: block;
+		height: 1px;
+		width: 50%;
+		margin-bottom: 1.25em;
+		margin-left: auto;
+		margin-right: auto;
+		content: ' ';
+		background-color: $giles-hidden-grey;
+	}
+
+	ul {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+
+		margin: 0 auto;
+
+		li {
+			display: table-cell;
+			float: none;
+			margin: 0;
+		}
+	}
+
+	i {
+		color: $giles-primary;
+		font-size: 32px;
+		transition: all 0.4s ease-in-out;
+
+		&:hover, &:focus {
+			color: rgb(223, 111, 63);
+		}
+	}
+}
+
+.test-bkg {background-color: purple;}

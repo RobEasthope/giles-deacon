@@ -1,0 +1,30 @@
+{
+  "name": "giles-deacon",
+  "version": "0.5.0",
+  "author": "Fitzgerald Shurey Tarbuck Dev Team <hello@fst-uk.com>",
+  "homepage": "http://www.giles-deacon.com",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fst-uk/giles-deacon.git"
+  },
+  "engines": {
+    "node": ">= 0.10.21"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-bower-task": "~0.3.4",
+    "grunt-webfont": "~0.2.1",
+    "grunt-notify": "~0.2.16",
+    "grunt-hashres": "~0.3.4",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-sass": "~0.8.1",
+    "node-sass": "~0.7.0",
+    "grunt-responsive-videos": "0.0.3",
+    "grunt-s3": "~0.2.0-alpha.3"
+  }
+}

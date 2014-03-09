@@ -1,0 +1,52 @@
+// Shows prototype gallery
+.gallery {
+	text-align: center;
+}
+
+.thumbnail {
+	@include thumb(0px, none, none);
+
+	p {text-align: center;}
+}
+
+.archive-thumbnail {
+	display: table;
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	padding-top: 75%;
+	padding-bottom: 75%;
+	text-decoration: none;
+
+	.text-wrap {
+		display: table-cell;
+		vertical-align: middle;
+		background-color: transparent;
+		transition: all .15s ease-out;
+
+		h4 {
+			transition: all .15s ease-out;
+			color: white;
+			margin: -1.4375rem 0;
+			font-weight: 100;
+			line-height: 1.25;
+			padding-left: rem-calc(3);
+			letter-spacing: rem-calc(3);
+		}
+	}
+
+	h4 {
+		// font-size: rem-calc(19);
+	}
+	
+	&:hover, &:focus {
+		.text-wrap {
+			h4 {
+			background-color: white;
+			color: black;
+			}
+			
+		}
+
+	}
+}

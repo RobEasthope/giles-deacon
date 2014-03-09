@@ -1,0 +1,63 @@
+
+.stockists-feed {
+	max-width: 50em;
+	margin: 0 auto;
+
+	// padding-top: 30px;
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 0;
+	margin-bottom: 0;
+
+	-webkit-column-gap: 20px;
+	-moz-column-gap: 20px;
+	column-gap: 20px;
+
+	-webkit-column-fill: auto;
+	-moz-column-fill: auto;
+	column-fill: auto;
+
+	-webkit-column-count: 1;
+	-moz-column-count: 1;
+	column-count: 1;
+
+	@media #{$small-up} {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
+	}
+
+	@media #{$medium-up} {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+		-webkit-column-gap: 30px;
+		-moz-column-gap: 30px;
+		column-gap: 30px;
+	}
+
+	@media #{$large-up} {
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		column-count: 3;
+		-webkit-column-gap: 40px;
+		-moz-column-gap: 40px;
+		column-gap: 40px;
+	}
+}
+
+.stockists-region {
+	text-transform: uppercase;
+	font-weight: 100;
+	letter-spacing: 3px;
+}
+
+.stockists-city {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.stockists-tel {
+	display: block;
+	margin-top: 0.5em;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Giles Deacon",
+  "version": "0.5.0",
+  "homepage": "https://github.com/fst-uk/giles-deacon",
+  "authors": [
+    "Fitzgerald Shurey Tarbuck Dev Team"
+  ],
+  "main": "assets/css/app.min.css",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "parsleyjs": "*",
+    "font-awesome": "*",
+    "foundation": "*",
+    "holderjs": "*",
+    "MultiLevelPushMenu": "*",
+    "classie": "*",
+    "modernizr": "*",
+    "wookmark-jquery": "*",
+    "modularized-normalize-scss": "*",
+    "owlcarousel": "*",
+    "videojs": "*",
+    "videojs-youtube": "*"
+  }
+}

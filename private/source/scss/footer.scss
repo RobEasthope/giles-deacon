@@ -1,0 +1,89 @@
+$footer-small-break-point: "#{$screen} and (min-width: 480px)";
+$footer-medium-break-point: "#{$screen} and (min-width: 1200px)";
+
+.footer-nav {
+	padding-top: $top-bar-vertical-margins / 2;
+	padding-bottom: $top-bar-vertical-margins / 2;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: rem-calc(14);
+	font-weight: 300;
+	letter-spacing: 0.2em;
+
+	@media #{$footer-medium-break-point} {
+		padding-top: $top-bar-vertical-margins;
+		padding-bottom: $top-bar-vertical-margins;
+
+		text-align: center;		
+	}
+
+	.center-large-footer-nav {
+		@media #{$footer-medium-break-point} {
+			display: inline-block;
+			text-align: center;
+		}
+	}
+
+	.columns:last-child {
+		@media #{$footer-medium-break-point} {
+			float: left;
+		}
+	}
+
+	.footer-links {
+		line-height: 2;
+		padding-left: 1.2em;
+		padding-right: 1em;
+
+		a {
+			letter-spacing: 0.2em;
+			word-spacing: 0.2em;
+			text-decoration: none;
+		}
+
+		@media #{$footer-medium-break-point} {
+			line-height: 1;
+		}
+	}
+
+
+	.stockists-footer-link {
+
+		@media #{$footer-medium-break-point} {
+			display: inline-block;
+			width: auto;
+		}
+	}
+
+	.twitter-footer-link {
+
+		@media #{$footer-medium-break-point} {
+			display: inline-block;
+			width: auto;
+		}
+	}
+
+	.facebook-footer-link {
+
+		@media #{$footer-medium-break-point} {
+			display: inline-block;
+			width: auto;
+		}
+	}
+
+	.instagram-footer-link {
+
+		@media #{$footer-medium-break-point} {
+			display: inline-block;
+			width: auto;
+		}
+	}
+
+	.contact-footer-link {
+
+		@media #{$footer-medium-break-point} {
+			display: inline-block;
+			width: auto;
+		}
+	}
+}

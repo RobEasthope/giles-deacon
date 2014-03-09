@@ -1,0 +1,125 @@
+// Foundation
+// ##########
+
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+// Normalize
+@import "../repos/foundation/scss/normalize";
+
+// Colour palette
+@import "colour-palette";
+
+// Foundation settings
+@import "foundation-settings";
+@import "../repos/foundation/scss/foundation/components/accordion";
+@import "../repos/foundation/scss/foundation/components/alert-boxes";
+
+@import "../repos/foundation/scss/foundation/components/block-grid"; // Comment out old grid
+// @import "custom-block-grid"; // Custom block grid
+
+// Return to foundation defaults
+@import "../repos/foundation/scss/foundation/components/breadcrumbs";
+@import "../repos/foundation/scss/foundation/components/button-groups";
+@import "../repos/foundation/scss/foundation/components/buttons";
+@import "../repos/foundation/scss/foundation/components/clearing";
+@import "../repos/foundation/scss/foundation/components/dropdown";
+@import "../repos/foundation/scss/foundation/components/dropdown-buttons";
+@import "../repos/foundation/scss/foundation/components/flex-video";
+@import "../repos/foundation/scss/foundation/components/forms";
+
+@import "../repos/foundation/scss/foundation/components/grid"; // Comment out old grid
+// @import "custom-grid"; // Custom grid
+
+// Return to foundation defaults
+@import "../repos/foundation/scss/foundation/components/inline-lists";
+@import "../repos/foundation/scss/foundation/components/joyride";
+@import "../repos/foundation/scss/foundation/components/keystrokes";
+@import "../repos/foundation/scss/foundation/components/labels";
+@import "../repos/foundation/scss/foundation/components/magellan";
+@import "../repos/foundation/scss/foundation/components/orbit";
+@import "../repos/foundation/scss/foundation/components/pagination";
+@import "../repos/foundation/scss/foundation/components/panels";
+@import "../repos/foundation/scss/foundation/components/pricing-tables";
+@import "../repos/foundation/scss/foundation/components/progress-bars";
+@import "../repos/foundation/scss/foundation/components/reveal";
+@import "../repos/foundation/scss/foundation/components/side-nav";
+@import "../repos/foundation/scss/foundation/components/split-buttons";
+@import "../repos/foundation/scss/foundation/components/sub-nav";
+@import "../repos/foundation/scss/foundation/components/switch";
+@import "../repos/foundation/scss/foundation/components/tables";
+@import "../repos/foundation/scss/foundation/components/tabs";
+@import "../repos/foundation/scss/foundation/components/thumbs";
+@import "../repos/foundation/scss/foundation/components/tooltips";
+// @import "../repos/foundation/scss/foundation/components/interchange";
+@import "custom-type"; // Custom typography
+@import "../repos/foundation/scss/foundation/components/offcanvas";
+// @import "../repos/foundation/scss/foundation/components/type";
+@import "../repos/foundation/scss/foundation/components/visibility";
+
+
+
+// Font Awesome
+// ############################
+
+// Custom variables
+@import "font-awesome-variables";
+
+// Resume pulling in default FA code
+@import "../repos/font-awesome/scss/mixins";
+@import "../repos/font-awesome/scss/path";
+@import "../repos/font-awesome/scss/core";
+@import "../repos/font-awesome/scss/larger";
+@import "../repos/font-awesome/scss/fixed-width";
+@import "../repos/font-awesome/scss/list";
+@import "../repos/font-awesome/scss/bordered-pulled";
+@import "../repos/font-awesome/scss/spinning";
+@import "../repos/font-awesome/scss/rotated-flipped";
+@import "../repos/font-awesome/scss/stacked";
+@import "../repos/font-awesome/scss/icons";
+
+
+// Giles code
+// ##########
+
+// Holding page (HP)
+// HP webfont
+
+// ############################
+
+// Quanta webfont
+@import "quanta/quanta";
+
+// Holding page webfont
+// @import "holding-page/_holding_icons";
+
+// HP (main code)
+// @import "holding-page/holding-page";
+
+// Owl Carousel
+// @import "owl.carousel";
+// @import "owl.theme";
+
+// Snippits
+@import "snippits";
+
+// Common stuctural elements
+@import "base";
+// @import "push-menu.scss";
+@import "header";
+@import "footer";
+
+// Individual pages
+@import "front-page";
+@import "couture";
+@import "bridal";
+@import "archive";
+@import "collection";
+@import "studio";
+@import "contact";
+@import "stockists";
+@import "articles";
+@import "stockists";
+
+// Temp code
+@import "hacks";

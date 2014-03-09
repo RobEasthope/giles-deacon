@@ -1,0 +1,41 @@
+// .video-banner {
+// 	background-image: url('../img/dummy-content/video/Screen Shot 2013-10-22 at 10.08.33.png');
+// 	background-position: center center;
+
+// 	text-align: center;
+// }
+
+.couture-gallery {
+
+}
+
+.couture-booking-wrap {
+	margin-top: rem-calc(30);
+	margin-bottom: 30px;
+	text-align: center;	
+}
+
+.couture-booking-btn, .load-more {
+	text-align: center;
+	font-size: rem-calc(18);
+	line-height: 1;
+	letter-spacing: 0.3em;
+	background-color: white;
+	border: 1px solid $india-ink;
+	text-transform: uppercase;
+	padding: rem-calc(10);
+	color: $india-ink;
+	display: inline-block;
+	text-decoration: none;
+
+	transition: all .1s ease-in;
+
+	@media #{$large-up} {
+		padding: rem-calc(20);
+	}
+
+	&:hover, &:focus {
+		background-color: #111;
+		color: white
+	}
+}

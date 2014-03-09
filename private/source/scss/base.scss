@@ -1,0 +1,99 @@
+// Sticky footer
+// *************
+
+// $footer-height: $topbar-height + 45; // Set to however many lines of text you want to have in your footer. Sorry, no dynamic option here.
+
+html, body, .container, .main-section, .wrap { height: 100%; }
+
+body, html {
+    width:100%;
+    overflow-x: hidden;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto;
+    // margin-bottom: $footer-height -1;
+}
+
+.wrap > *:last-child {
+    // padding-bottom: $footer-height;
+}
+
+.footer {
+    // height: $footer-height;
+    // height: 100%;
+}
+
+// Ensure sticky footer plays well with push menu
+.scroller-inner  {
+	height: 100%;
+}
+
+.off-canvas-wrap {
+	overflow: visible;
+    height: 100%;
+}
+
+// Document margins
+$small-nav-height: rem-calc(60);
+$large-nav-height: rem-calc(125);
+
+$small-dynamic-margins: rem-calc(10);
+$medium-dynamic-margins: $small-nav-height / 1.5;
+$large-dynamic-margins: $small-nav-height;
+$xlarge-dynamic-margins: $large-nav-height;
+
+.dynamic-margins {
+    margin-left: $small-dynamic-margins;
+    margin-right: $small-dynamic-margins;
+
+    @media #{$small-up} {
+        margin-left: $small-dynamic-margins;
+        margin-right: $small-dynamic-margins;
+    }
+
+    @media #{$medium-up} {
+        margin-left: $medium-dynamic-margins;
+        margin-right: $medium-dynamic-margins;
+    }
+
+    @media #{$large-up} {
+        margin-left: $large-dynamic-margins;
+        margin-right: $large-dynamic-margins;
+    }
+
+    @media #{$xlarge-up} {
+        margin-left: $xlarge-dynamic-margins;
+        margin-right: $xlarge-dynamic-margins;
+    }
+}
+
+// Minimum page margins
+.minimum-margins {
+    margin-left: rem-calc(20);
+    margin-right: rem-calc(20);
+}
+
+// Globals
+.gallery-block-grid {
+    margin: 0 -1.25rem;
+    // margin: 0 -0.5rem;
+
+    // @media #{$medium-up} {
+    //     margin: 0 -1.25rem;
+    // }
+}
+
+
+// .small-block-grid-2 >li {
+//     @media #{$small-up} {
+//         padding: 0 0.5rem 2.5rem;
+//     }
+// }
+
+a {
+    text-decoration: underline;
+}

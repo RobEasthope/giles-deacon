@@ -1,0 +1,72 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.buildpath
+.project
+.settings
+
+# Laravel default ignore options #
+##################################
+/private/bootstrap/compiled.php
+/private/vendor
+/private/composer.phar
+/private/composer.lock
+/private/workbench/*
+/private/vendor/*
+.DS_Store
+
+# Ignore these folders #
+########################
+/cgi-bin
+/log
+/log/*
+/ssl
+/tmp
+/webdav
+/stats
+/node_modules
+/.sass-cache/
+/private/source/repos/
+/private/source/temp/*
+/private/source/video/
+/web/assets/video/private/source/video/
+
+# AWS #
+########################
+/web/static/css/*
+/web/static/js/*
+/web/static/img/*

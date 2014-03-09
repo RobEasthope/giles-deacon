@@ -1,0 +1,16 @@
+.photo-banner {
+	display: table;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: rem-calc(300);
+}
+
+$banner-height: rem-calc(250);
+
+.banner {
+	width: 100%;
+	height: $banner-height;
+	background-color: $giles-hidden-grey;
+	display: table;
+}

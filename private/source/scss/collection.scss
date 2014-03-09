@@ -1,0 +1,37 @@
+.video-banner {
+	display: table;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: rem-calc(400);
+	background-image: url('/assets/img/dummy-content/video/holding_image_for_show_video.jpg');
+	background-image: url('/assets/img/dummy-content/banner/giles_bannertest_1282x300.jpg');
+	background-position: center top;
+	
+	@media screen and (min-width: $large-up) {
+		background-image: url('/assets/img/dummy-content/banner/giles_bannertest_2048x480.jpg');
+	}
+
+	@media #{$xlarge-up} {
+		background-image: url('/assets/img/dummy-content/banner/giles_bannertest_2560x600.jpg');
+	}
+
+	@media #{$large-up} {
+		height: rem-calc(500);
+	}
+
+	@media #{$large-up} {
+		height: rem-calc(600);
+	}
+}
+
+.show-title {
+	margin-top: rem-calc(15);
+	margin-bottom: rem-calc(15);
+	text-align: center;	
+}
+	
+.load-more {
+	@include button($button-med, white, 0px, false, false, false);
+}
+
